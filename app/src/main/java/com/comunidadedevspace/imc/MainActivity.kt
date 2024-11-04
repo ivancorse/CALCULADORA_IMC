@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Recuperar os componentes EditText
-        // Criar uma variével e associar o componente de UI <EditTexte>
+        // Criar uma variével e associar (=) o componente de UI <EditTexte>
         // Recuperar o botão da tela
 
         // Colocar ação no botão setOnClicklistener
@@ -23,11 +23,19 @@ class MainActivity : AppCompatActivity() {
     val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
 
-    btnCalcular.setOnClickListener {
-        val peso = edtPeso.text
-        val altura = edtAltura.text
 
-        println("action" + (peso) + (altura))
+
+
+    btnCalcular.setOnClickListener {
+        val peso: Float = edtPeso.text.toString().toFloat()
+        val altura: Float = edtAltura.text.toString().toFloat()
+
+        val alturaQ2 = altura * altura
+        val resultado = peso / alturaQ2
+
+        println("action" + resultado )
+
+
     }
 
 
