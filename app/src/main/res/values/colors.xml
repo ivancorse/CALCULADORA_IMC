@@ -3,6 +3,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary_400">#cd00ea</color>
-    <color name="primary_900">#5c00d2</color>
+    <color name="primary_400">#00FFFF</color>
+    <color name="primary_900">#008B8B</color>
+
+<color name="botao">#48D1CC</color>
+
+<color name="verde">#32CD32</color>
+<color name="amarelo">#FFD700</color>
+<color name="laranja">#FF8C00</color>
+<color name="vermelho">#FF0000</color>
+
+
 </resources>
