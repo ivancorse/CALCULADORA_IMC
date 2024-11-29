@@ -20,8 +20,8 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="24dp"
-            android:layout_marginTop="16dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:src="@drawable/ic_weight"
             app:tint="@color/white" />
@@ -54,10 +54,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Calcular"
         android:backgroundTint="@color/botao"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Calcular"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="293dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -65,9 +65,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:hintEnabled="false"
+        app:hintTextColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vg_header">
@@ -80,7 +81,10 @@
             android:drawableEnd="@drawable/ic_weight"
             android:hint="Digite seu peso ex:70.200"
             android:inputType="numberDecimal"
-            android:maxLength="6" />
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cinza"
+            android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -88,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:hintEnabled="false"
+        app:hintTextColor="@color/cinza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
@@ -100,7 +105,10 @@
             android:drawableEnd="@drawable/ic_height"
             android:hint="Digite sua altura ex: 1,70"
             android:inputType="numberDecimal"
-            android:maxLength="4" />
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textColorHint="@color/cinza"
+            android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
